@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+node_modules/
+frontend/dist/
+.claude/
+backend/certs/
+backend/data/

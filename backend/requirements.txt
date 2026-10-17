@@ -1,0 +1,10 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+cryptography>=42     # self-signed cert generation (scripts/make_cert.py)
+mcp>=2.0             # local MCP server exposing the SQLite database to Claude (backend/mcp_server.py)
+# Bluetooth: GATT server so Android phones can send via Web Bluetooth (on by default)
+bless>=0.2.6
+pysetupdi @ git+https://github.com/gwangyi/pysetupdi ; sys_platform == "win32"
+# Optional: central-role bridge for real BLE peripherals (ESP32 etc.), BLE_ENABLED=1
+bleak>=0.22
